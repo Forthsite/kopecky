@@ -18,7 +18,7 @@ function filterGallery(category) {
     }
   });
 }
-document.querySelectorAll('.grid-item.graphics img, .grid-item.socmedia img').forEach(image =>{
+document.querySelectorAll('.grid-item.graphics img, .grid-item.socmedia img, .gallery-item img').forEach(image =>{
     image.onclick = () =>{
         document.querySelector('.popup-image').style.display = 'block';
         document.querySelector('.popup-image img').src = image.getAttribute('src');
